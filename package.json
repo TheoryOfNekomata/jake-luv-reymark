@@ -1,0 +1,27 @@
+{
+  "name": "@theoryofnekomata/jake-luv-reymark",
+  "version": "0.0.0",
+  "description": "Best programming language transpilable to EcmaScript 5",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jasmine tests/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Temoto-kun/jake-luv-reymark.git"
+  },
+  "keywords": [
+    "language",
+    "Web",
+    "transpile"
+  ],
+  "author": "TheoryOfNekomata <allan.crisostomo@outlook.com> (https://temoto-kun.github.io/)",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/Temoto-kun/jake-luv-reymark/issues"
+  },
+  "homepage": "https://github.com/Temoto-kun/jake-luv-reymark#readme",
+  "devDependencies": {
+    "jasmine": "^2.5.3"
+  }
+}
