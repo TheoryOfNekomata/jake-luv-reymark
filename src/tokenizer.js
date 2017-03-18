@@ -84,7 +84,7 @@ const LexerState = {
 
 const delimitedStates = [LexerState.DQUOTE_STRING, LexerState.COMMENT];
 
-class Lexer {
+class Tokenizer {
     static tokenize(input) {
         let tokens = [],
             states = [],
@@ -130,9 +130,8 @@ class Lexer {
                 currentState = lookaheadState;
             });
 
-        return tokens
-            .filter(token => token.trim().length > 0);
+        return tokens;
     }
 }
 
-module.exports = Lexer;
+module.exports = Tokenizer;

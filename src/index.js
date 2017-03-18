@@ -4,12 +4,15 @@
  * @date 2017-03-18
  */
 
-const Lexer = require('./lexer');
+const Tokenizer = require('./tokenizer');
+const Parser = require('./parser');
+const Converter = require('./converter');
 
 class Transpiler {
     static transpile(contents) {
-        let tokens = Lexer.tokenize(contents);
-        console.log(tokens);
+        let converted = Converter.convert(Parser.parse(Tokenizer.tokenize(contents)));
+
+        console.log(converted);
     }
 }
 
